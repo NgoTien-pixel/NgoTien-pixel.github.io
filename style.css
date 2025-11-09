@@ -1,0 +1,233 @@
+body {
+  width: 100%;
+  margin: 0;
+
+}
+
+/* Popup overlay */
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Enlarged image */
+#popup img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Navigation buttons */
+#popup .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  padding: 20px;
+}
+
+#popup .prev {
+  left: 20px;
+}
+#popup .next {
+  right: 20px;
+}
+
+/* Close button */
+#popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+.bike_general p {
+  margin: 2px 0; /* reduce vertical spacing */
+  line-height: 1.1; /* optional: tighten text lines */
+}
+
+.bike_general .name {
+  font-weight: bold;
+}
+
+.bike_general .number {
+  color: #555;
+}
+
+.bike_general {
+    background-color: #f6f6f6 ;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  
+}
+.name{
+    font-size: 30px;
+    line-height: 0.005;
+}
+
+.lock{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.number{
+    font-size: 23px;
+}
+
+img {
+  max-width: 100%;   /* Prevent image from exceeding parent width */
+  height: auto;      /* Maintain aspect ratio */
+  display: block;    /* Remove extra space below inline images */
+  object-fit: contain; /* Optional: keeps image fully visible inside its box */
+}
+
+.out_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;         /* Optional: space between images */
+  margin-top: 90px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+#hero {
+    background-image: url("./bmv_2.png");
+    background-size: 100% 450px;
+    min-height: 145px;
+    background-position: center 30%;
+    height: 6%;
+}
+
+.hidden {
+  display: none;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#popup img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+#popup .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  padding: 20px;
+}
+
+#popup .prev { left: 20px; }
+#popup .next { right: 20px; }
+
+#popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+.lock {
+    line-height: 0;
+}
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;   /* Prevent image from exceeding parent width */
+  margin: 10px;
+  height: auto;      /* Maintain aspect ratio */
+  display: block;    /* Remove extra space below inline images */
+  object-fit: contain; /* Optional: keeps image fully visible inside its box */
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+/* Overlay hint */
+.tap-hint {
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+  background: #f6f6f6 ;
+  color: white;
+  font-size: 0.8em;
+  padding: 4px 8px;
+  border-radius: 12px;
+  opacity: 0.8;
+  pointer-events: none; /* don’t block taps */
+  transition: opacity 0.3s ease;
+}
+
+/* optional fade-out after tap */
+.image-wrapper:active .tap-hint {
+  opacity: 0.3;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.whatsapp-qr {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+footer a {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+}
