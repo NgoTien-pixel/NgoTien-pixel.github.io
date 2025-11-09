@@ -112,6 +112,12 @@
             popup.style.display = "flex";
           });
         });
+        container.addEventListener("click", (e) => {
+          currentImages = Array.from(imgs);
+          currentIndex = 0;
+          popupImg.src = currentImages[currentIndex].src;
+          popup.style.display = "flex";
+        });
       });
 
       // Close popup
